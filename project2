@@ -1,0 +1,45 @@
+import random
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+choice=[rock,paper,scissors]
+it=int(input(" what do you choose?\n 0 for rock ,\n 1 for paper ,\n 2 for scissors"))
+if it>=0 or it<=2:
+    print("user's choice\n",choice[it])
+rand=random.randint(0,2)
+print("computer's choice\n",choice[rand])
+if it>3 or it<0:
+    print(" inavlid number choose")
+elif it==0 and rand==2:
+    print("you wan")
+elif it==2 and rand==0:
+    print("you loose")
+elif it>rand:
+    print(" you win")
+elif it<rand:
+    print(" you lose")
+else:
+    print("it's draw")
