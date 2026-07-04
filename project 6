@@ -1,5 +1,17 @@
-import art
-print(art.logo)
+logo = r'''
+                         ___________
+                         \         /
+                          )_______(
+                          |"""""""|_.-._,.---------.,_.-._
+                          |       | | |               | | ''-.
+                          |       |_| |_             _| |_..-'
+                          |_______| '-' `'---------'` '-'
+                          )"""""""(
+                         /_________\\
+                       .-------------.
+                      /_______________\\
+'''
+print(logo)
 # TODO-1: Ask the user for input
 user=True
 print("Welcome to the secret auction program!")
